@@ -84,11 +84,17 @@ The **startingPoint** file is using project's variables save default scripts and
 
 
 
-## Project settings
+## Project settings and Macros
 
+### Macros 
+Project's macros define 3 new @qgsfunction methods that are accessiable in your ExpressionEngine and are nested under a new group named **Common**
+> - **C_ViewShed** - Calculates a viewshed using a point geometry, DEM layer, radius and target observer heights. Gives back a polygon representing visible areas
+> - **C_Json2Sqlite2Json** - Creates an sqlite3 (memory) table from a structured json stream (all json features must have the same keys at the same order) named 'data'. The method then runs any SQL query over this data and returns it's result as a structured json stream.
+> - **C_Json2Html** - Gets a structured json stream (again all features must have the same keys at the same order) and returns an html table with json keys as table's headers. A dictionary with keys and their aliases could be supllied too control display of headers and their order. Also a CSS string can be given to be insert as an inline CSS for the < table > tag
+
+
+### Project settings
 Defualt styling setting are saved for new Polygons, Lines and Points. Newer versions may include styles and colors to support better workflows.
 
-<sub> * Notice that polygons color settings are made with embbeded scripts that can be cleared or deactivated </sub>
-
-
+ <sub> * Notice: Polygons are colored with embbeded scripts that should be cleared or deactivated to sucessfully change their colors manually </sub>
 
