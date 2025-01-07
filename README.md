@@ -20,14 +20,14 @@ This QGiS project is built as a go-to **startingPoint** for new projects. The fi
 
 Project's layers-tree is built to keep focus on the user's **working layers** while structuring styled and improved **background** imagery and also keeping easy access to the **Tools and draft** layers group. 
 
-> **Background** is combined from 4 different layers styled using blend modes to create an improved background imagery.
+> **Background** is combined from different layers styled using blend modes to create an improved background imagery.
 >
-> - Ortophoto imagery (deafaulted to google setallite) 
-> - Google labels, styled to show main features on top of any ortophoto
-> - OSM Buildings and Water vector tiles, styled to contrast them with other surfaces without hiding or loosing orophoto's details
-
-> **Topo** is constructed only from the project's DEM layer styled to show contour lines
-> Notice: DEM layer is essential for several tools to work so it's strongly advised to replace it only by changing the layer's datasource to your own local DEM file or name the any new DEM layer as 'DEM'
+> - **Topo** - Constructed only from the project's DEM layer styled to show contour lines
+> - **Landuse** -  OSM Buildings and Water vector tile layers, styled to contrast these surfaces from others without hiding or loosing orophoto's details
+> - **Google labels only** - Raster layer showing only google map's labels to easily get worldwide basic orientation. Layer is also used to darken roads, further versions may use other OSM vector tiles to create this effect
+> - **Orto** - Ortophoto imagery (deafaulted to google setallite) 
+> 
+> <sub> Notice: DEM layer is essential for several tools to work so it's strongly advised to name any new elevation model layer as 'DEM' or alternatively, changing this layer's datasource to your own local DEM file</sub>
 
 Also you have **Tables & Data** group to store non-spatial data and **Layers** to store your project's work layers.
 
