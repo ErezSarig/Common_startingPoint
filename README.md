@@ -73,6 +73,8 @@ The **startingPoint** file is using project's variables save default scripts and
 
 > - **@Font** - Easly set and change font settings for all layers,layouts and labels by using this variable when styling of new objects and layers
 >
+> - **@Color1, @Color2** - Basic project colors used as deafults
+>
 > - **eval_template(@CSS)** - This is a more complex set of ready-made CSS properties (Using the @Font variable  as input). Useful for automatic and unified styling of your html scripts and snippets such as mapTip, Html labels etc
 >
 > - **eval( @Feat2Html ) ** - Use this script to turn your feature into an Html table. To control styling of different features use layer's variables such as:
