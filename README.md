@@ -9,7 +9,7 @@ For any questions, bug reports and any comment or improvements suggestion, pleas
 # Common startingPoint
 
 
-This QGiS project is built as a go-to **startingPoint** for new projects. The file opens up with ready made project's settings, styling and easy to use tools and functions. All settings, styles and scripts shared on this project yielded from my own workflows and daily needs while working on versatile types of projects. 
+This QGiS project is a go-to **startingPoint** for new projects. Built with ready made project's settings, styling and easy to use tools and functions embbeded in project's variables and Expression engine.
 
 <ins>**Important:**</ins>
 
@@ -19,18 +19,20 @@ This QGiS project is built as a go-to **startingPoint** for new projects. The fi
 ## Groups and layers
 
 Project's layers-tree is built to keep focus on the user's **working layers** while structuring styled and improved **background** imagery and also keeping easy access to the **Tools and draft** layers group. 
-
+> **Layers** group is used to store your project's working layers, which you would usually toogle through often, separately from more basic and stationary layers.
+<br>
 > **Background** is combined from different layers styled using blend modes to create an improved background imagery.
 >
 > - **Topo** - Constructed only from the project's DEM layer styled to show contour lines
 > - **Landuse** -  OSM Buildings and Water vector tile layers, styled to contrast these surfaces from others without hiding or loosing orophoto's details
 > - **Google labels only** - Raster layer showing only google map's labels to easily get worldwide basic orientation. Layer is also used to darken roads, further versions may use other OSM vector tiles to create this effect
 > - **Orto** - Ortophoto imagery (deafaulted to google setallite) 
-> 
-> <img src="Screenshot 2025-02-22 at 20.35.00.png" alt="Improved background emphasizing building and water bodies with google maps modified map used for labeling"></img>
+>
 > <sub> Notice: DEM layer is essential for several tools to work so it's strongly advised to name any new elevation model layer as 'DEM' or alternatively, changing this layer's datasource to your own local DEM file</sub>
+>
+> <img src="Screenshot 2025-02-22 at 20.35.00.png" alt="Improved background emphasizing building and water bodies with google maps modified map used for labeling"></img>
 
-Also you have **Tables & Data** group to store non-spatial data and **Layers** to store your project's work layers.
+Also you have **Tables & Data** group to store non-spatial data.
 
 ## Drafts & tools 
 
