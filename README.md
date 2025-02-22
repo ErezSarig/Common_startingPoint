@@ -20,7 +20,7 @@ This QGiS project is a go-to **startingPoint** for new projects. Built with read
 
 Project's layers-tree is built to keep focus on the user's **working layers** while structuring styled and improved **background** imagery and also keeping easy access to the **Tools and draft** layers group. 
 > **Layers** group is used to store your project's working layers, which you would usually toogle through often, separately from more basic and stationary layers.
-<br>
+
 > **Background** is combined from different layers styled using blend modes to create an improved background imagery.
 >
 > - **Topo** - Constructed only from the project's DEM layer styled to show contour lines
@@ -30,6 +30,7 @@ Project's layers-tree is built to keep focus on the user's **working layers** wh
 >
 > <sub> Notice: DEM layer is essential for several tools to work so it's strongly advised to name any new elevation model layer as 'DEM' or alternatively, changing this layer's datasource to your own local DEM file</sub>
 >
+> 
 > <img src="Screenshot 2025-02-22 at 20.35.00.png" alt="Improved background emphasizing building and water bodies with google maps modified map used for labeling"></img>
 
 Also you have **Tables & Data** group to store non-spatial data.
