@@ -27,6 +27,7 @@ Project's layers-tree is built to keep focus on the user's **working layers** wh
 > - **Google labels only** - Raster layer showing only google map's labels to easily get worldwide basic orientation. Layer is also used to darken roads, further versions may use other OSM vector tiles to create this effect
 > - **Orto** - Ortophoto imagery (deafaulted to google setallite) 
 > 
+> <img src="Screenshot 2025-02-22 at 20.35.00.png" alt="Improved background emphasizing building and water bodies with google maps modified map used for labeling"></img>
 > <sub> Notice: DEM layer is essential for several tools to work so it's strongly advised to name any new elevation model layer as 'DEM' or alternatively, changing this layer's datasource to your own local DEM file</sub>
 
 Also you have **Tables & Data** group to store non-spatial data and **Layers** to store your project's work layers.
