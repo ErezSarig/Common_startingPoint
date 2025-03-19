@@ -69,7 +69,7 @@ Scripts and data links for these purposes are allready embedded in each layer's 
 >
 > - **Intersection group by mapTip** - Shows the aggregated sum of areas intersecting your polygon grouped by categories found on a choosen "GroupByField"
 
-<img src="ViewshedExample.jpg" alt="Point draft layer used to show viewshed" width="50%"></img> <img src="SectionExample.jpg" alt="Line draft layer used for measuring segment's slopes and visualising the line's section"></img> <img src="IntersectionExmaple.jpg" alt="Polygon draft layer with a polygon representing the border of a neighbourhood is used to map the footprint of buildings with different number of floors when intersected with a building layer"></img>
+<img src="ViewshedExample.jpg" alt="Point draft layer used to show viewshed" height="320px"  ></img> <img src="SectionExample.jpg" alt="Line draft layer used for measuring segment's slopes and visualising the line's section" height="320px"></img> <img src="IntersectionExmaple.jpg" alt="Polygon draft layer with a polygon representing the border of a neighbourhood is used to map the footprint of buildings with different number of floors when intersected with a building layer" height="320px" ></img>
 
 ## Ready made settings and scripts
 
