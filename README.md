@@ -9,16 +9,16 @@ For any questions, bug reports and any comment or improvements suggestion, pleas
 # Common startingPoint
 
 
-This QGiS project is a go-to **startingPoint** for new projects. Built with ready made project's settings, styling and easy to use tools and functions embbeded in project's variables and Expression engine.
+This QGiS project is a go-to **startingPoint** for new projects. Built with ready made project's settings, styling and easy to use tools and functions embbeded in various methods, mostly using project's variables, Macros and Expression engine.
 
 <ins>**Important:**</ins>
 
-**Enabling of macros is needed for tools to work** <br>
+**Enabling of macros when launching is needed for tools to work** <br>
 **DEM Layer of the area is needed for terrain analysis tools**
 
 ## Groups and layers
 
-Project's layers-tree is built to keep focus on the user's **working layers** while structuring styled and improved **background** imagery and also keeping easy access to the **Tools and draft** layers group. 
+Project's layers-tree is built to keep focus on the user's **working layers** while structuring styled and improved **background** imagery and keeping fast access to the **Tools and draft** layers group. 
 > **Layers** group is used to store your project's working layers, which you would usually toogle through often, separately from more basic and stationary layers.
 
 > **Background** is combined from different layers styled using blend modes to create an improved background imagery.
@@ -33,7 +33,7 @@ Project's layers-tree is built to keep focus on the user's **working layers** wh
 > 
 > <img src="Screenshot 2025-02-22 at 20.35.00.png" alt="Improved background emphasizing building and water bodies with google maps modified map used for labeling"></img>
 
-Also you have **Tables & Data** group to store non-spatial data.
+Also you have **Tables & Data** group to store all non-spatial data.
 
 ## Drafts & tools 
 
@@ -102,5 +102,5 @@ Project's macros define 3 new @qgsfunction methods that are accessiable in your 
 ### Project settings
 Defualt styling setting are saved for new Polygons, Lines and Points. Newer versions may include styles and colors to support better workflows.
 
- <sub> * Notice: Polygons are colored with embbeded scripts that should be cleared or deactivated to sucessfully change their colors manually </sub>
+ <sub> * Notice: Polygons and Points are colored with embbeded scripts that should be cleared or deactivated to sucessfully change their colors manually </sub>
 
