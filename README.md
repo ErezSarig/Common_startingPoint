@@ -9,36 +9,36 @@ For any questions, bug reports and any comment or improvements suggestion, pleas
 # Common startingPoint
 
 
-This QGiS project is a go-to **startingPoint** for new projects. Built with ready made project's settings, styling and easy to use tools and functions embbeded in various methods, mostly using project's variables, Macros and Expression engine.
+This QGiS project is designed to be a go-to **startingPoint** for all of you new projects. Built with ready made settings, styling and accessible tools embedded within variables, Macros, Expression engine and Temp Layers.
 
 <ins>**Important:**</ins>
 
-**Enabling of macros when launching is needed for tools to work** <br>
-**DEM Layer of the area is needed for terrain analysis tools**
+**Enabling of macros when launching is needed every time for tools to work** <br>
+**DEM Layer can be changed as long as the name DEM is kept**
 
 ## Groups and layers
 
-Project's layers-tree is built to keep focus on the user's **working layers** while structuring styled and improved **background** imagery and keeping fast access to the **Tools and draft** layers group. 
-> **Layers** group is used to store your project's working layers, which you would usually toogle through often, separately from more basic and stationary layers.
+Project's layers-tree is built to keep focus on the user's **Working layers**.
 
-> **Background** is combined from different layers styled using blend modes to create an improved background imagery.
->
+ **Tools and draft** group is made for temp layer for analyzing, measuring and temporal drawings. 
+> **Unsorted** and **Sorted** are made for you to have a place to first load layer for inspection before deciding where to save them on your sorted and stationary layers
+> **Background** group combines different layers styled using blend modes to create an improved background imagery. 
 > - **Topo** - Constructed only from the project's DEM layer styled to show contour lines
 > - **Landuse** -  OSM Buildings and Water vector tile layers, styled to contrast these surfaces from others without hiding or loosing orophoto's details
-> - **Google labels only** - Raster layer showing only google map's labels to easily get worldwide basic orientation. Layer is also used to darken roads, further versions may use other OSM vector tiles to create this effect
+> - **Google labels only** - Raster layer showing only google map's labels to easily get worldwide basic orientation. Layer is also used to darken roads, further versions may use other OSM vector tiles to create improved effects of this sort and more.
 > - **Orto** - Ortophoto imagery (deafaulted to google setallite) 
 >
-> <sub> Notice: DEM layer is essential for several tools to work so it's strongly advised to name any new elevation model layer as 'DEM' or alternatively, changing this layer's datasource to your own local DEM file</sub>
+> <sub> Notice: DEM layer is essential for several tools to work so it's strongly advised to name any new elevation model layer as 'DEM' or even better, changing this layer's datasource to your own local DEM file</sub>
 >
 > 
 > <img src="Screenshot 2025-02-22 at 20.35.00.png" alt="Improved background emphasizing building and water bodies with google maps modified map used for labeling"></img>
 
-Also you have **Tables & Data** group to store all non-spatial data.
+**Tables & Data** group is used store all non-spatial data.
 
-## Drafts & tools 
 
-The last group called **Drafts & tools** is made out of [temporary scratch layers](https://docs.qgis.org/3.34/en/docs/user_manual/managing_data_source/create_layers.html#creating-a-new-temporary-scratch-layer) for Points, Lines and Polygons that can be used as drafts. Each layer can also be used for spatial investigations of your project with quick analysing tools.
-Scripts and data links for these purposes are allready embedded in each layer's styling rule so you can start easily start just by adding a new feature to that layer. That's the reason they're also reffered to as tools:
+## Drafts & tools - explained
+The last group called **Drafts & tools** is made out of [temporary scratch layers](https://docs.qgis.org/3.34/en/docs/user_manual/managing_data_source/create_layers.html#creating-a-new-temporary-scratch-layer) for Points, Lines and Polygons that can be used for quick drafts. Each layer can also be used for spatial investigations of your project with easy to use analyzing tools.
+The layer's styling is set with scripts and data links. You can start just by adding a new feature to that layer to start analyzing it:
 
 > ### Points layer:
 >
@@ -47,29 +47,30 @@ Scripts and data links for these purposes are allready embedded in each layer's 
 > - **MeasureRadius** - Shows the value of the feature's "Radius" field around your point.
 >
 > - **ViewShed** - Shows the claculated viewshed of a viewer standing at that point within the calculated radius.
->
+><img src="ViewshedExample.jpg" alt="Point draft layer used to show viewshed" height="320px" ></img>
 > <sub> **Viewer and target height are defined as layer's variable and can be changed easily, but can't be set separately for each point </sub>
 
 > ### **Lines** layer:
 >
-> - **Line** - For drafts, automatic calcuations made for a C-section display
->
+> - **Line** - For drafts, automatic calcuations made for distance and slopes.
+> - **Cross section** - Maptip of the feature will show a basic cross section which you can export using the Export Svg Action. Pointing to another layer using the "Layer2Intersect" field will show a cross-section with intersection chart using the intersected layer's categories and symbology.
+>   "GroupByField" is also optional if your wish is to calculate the sum of other fields (Not the ones used for categorization)
+>   Use "LabelField" for labels different from the layer's categories. For instance when categories are sorted by Code use Desc field for labeling instead.
+> - 
+>  <img src="Cross-IntersSection.png" alt="" height="360px"> <img src="InputForm.png" alt="" height="360px"></img>
+
 > - **Buffer** - Shows the value of the feature's "Buffer" field as a buffer around that line
 >
 > - **Distance & Avg. slopes **- Show each segment's length and calculated avgerage slope and direction
 >
 > - **Min Max** - Calculate and shows line's minimum and maximum points
->   
-> - **C-Section mapTip** - Hover with your mouse on each line to display it's calculated C-Section using mapTip 
 
 > ### Polygons layer:
 >
-> - **Measures** - Using *Klas Karlsson's* 'Polygons with measurments', this show the measures for all polygon's segments 
-> - **Intersects others** - Showing the area of intersection of your polygon with another layer and it's calculated size. To choose the layer you want to intersect insert it's name to the feature's "Layer2Intersect" field
->
-> - **Intersection group by mapTip** - Shows the aggregated sum of areas intersecting your polygon grouped by categories found on a choosen "GroupByField"
-
-<img src="ViewshedExample.jpg" alt="Point draft layer used to show viewshed" height="320px"  ></img> <img src="SectionExample.jpg" alt="Line draft layer used for measuring segment's slopes and visualising the line's section" height="320px"></img> <img src="IntersectionExmaple.jpg" alt="Polygon draft layer with a polygon representing the border of a neighbourhood is used to map the footprint of buildings with different number of floors when intersected with a building layer" height="320px" ></img>
+> - **Measures** - Using *Klas Karlsson's* 'Polygons with measurments', this show the measures for all polygon's segments.
+> - **Intersects others** - Showing the area of intersection of your polygon with another layer and it's calculated size. To choose the layer you want to intersect insert it's name to the feature's "Layer2Intersect" field as with the line intersection.
+>   
+ <img src="PieIntersection.png" alt="Polygon" height="360px" ></img>
 
 ## Ready made settings and scripts
 
