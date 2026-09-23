@@ -27,13 +27,10 @@ Project's layers-tree is built to keep focus on the user's **Working layers**.
 > - **Landuse** -  OSM Buildings and Water vector tile layers, styled to contrast these surfaces from others without hiding or loosing orophoto's details
 > - **Google labels only** - Raster layer showing only google map's labels to easily get worldwide basic orientation. Layer is also used to darken roads, further versions may use other OSM vector tiles to create improved effects of this sort and more.
 > - **Orto** - Ortophoto imagery (deafaulted to google setallite) 
->
-> <sub> Notice: DEM layer is essential for several tools to work so it's strongly advised to name any new elevation model layer as 'DEM' or even better, changing this layer's datasource to your own local DEM file</sub>
->
-> 
 > <img src="Screenshot 2025-02-22 at 20.35.00.png" alt="Improved background emphasizing building and water bodies with google maps modified map used for labeling"></img>
+> - **Tables & Data** group is used store all non-spatial data.
+> <sub> Notice: DEM layer is essential for several tools to work so it's strongly advised to name any new elevation model layer as 'DEM' or even better, changing this layer's datasource to your own local DEM file</sub>
 
-**Tables & Data** group is used store all non-spatial data.
 
 
 ## Drafts & tools - explained
@@ -53,17 +50,19 @@ The layer's styling is set with scripts and data links. You can start just by ad
 > ### **Lines** layer:
 >
 > - **Line** - For drafts, automatic calcuations made for distance and slopes.
-> - **Cross section** - Maptip of the feature will show a basic cross section which you can export using the Export Svg Action. Pointing to another layer using the "Layer2Intersect" field will show a cross-section with intersection chart using the intersected layer's categories and symbology.
->   "GroupByField" is also optional if your wish is to calculate the sum of other fields (Not the ones used for categorization)
->   Use "LabelField" for labels different from the layer's categories. For instance when categories are sorted by Code use Desc field for labeling instead.
 > - 
->  <img src="Cross-IntersSection.png" alt="" height="360px"> <img src="InputForm.png" alt="" height="360px"></img>
-
+> - **Cross section** - mapTip of the feature will show a basic cross section which you can export using the Export Svg Action button.
+> -
+> -  **Cross section & Intersection** - Pointing to another layer name using the "Layer2Intersect" field will show a cross-section with intersection chart using the intersected layer's categories and symbology. Adding "LabelField" can be used for different labels instead of category's one. For instance when categories are sorted by Code it's possible to use Desc field for labeling instead.
+>   "GroupByField" is also optional if your wish is to calculate the sum of other fields to you choice (Not the ones used for categorization)
+> - 
 > - **Buffer** - Shows the value of the feature's "Buffer" field as a buffer around that line
 >
-> - **Distance & Avg. slopes **- Show each segment's length and calculated avgerage slope and direction
+> - **Distance & Avg. slopes**- Show each segment's length and calculated avgerage slope and direction
 >
-> - **Min Max** - Calculate and shows line's minimum and maximum points
+> - **Min Max** - Calculated and showed as green (Max) and purple (Min) dots.
+>
+> - <img src="Cross-IntersSection.png" alt="" width="360px"> <img src="InputForm.png" alt="" width="360px"></img>
 
 > ### Polygons layer:
 >
