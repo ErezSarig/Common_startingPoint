@@ -50,12 +50,12 @@ The layer's styling is set with scripts and data links. You can start just by ad
 > ### **Lines** layer:
 >
 > - **Line** - For drafts, automatic calcuations made for distance and slopes.
-> - 
+> 
 > - **Cross section** - mapTip of the feature will show a basic cross section which you can export using the Export Svg Action button.
 > -
 > -  **Cross section & Intersection** - Pointing to another layer name using the "Layer2Intersect" field will show a cross-section with intersection chart using the intersected layer's categories and symbology. Adding "LabelField" can be used for different labels instead of category's one. For instance when categories are sorted by Code it's possible to use Desc field for labeling instead.
 >   "GroupByField" is also optional if your wish is to calculate the sum of other fields to you choice (Not the ones used for categorization)
-> - 
+> 
 > - **Buffer** - Shows the value of the feature's "Buffer" field as a buffer around that line
 >
 > - **Distance & Avg. slopes**- Show each segment's length and calculated avgerage slope and direction
