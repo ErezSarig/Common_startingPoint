@@ -44,7 +44,7 @@ The layer's styling is set with scripts and data links. You can start just by ad
 > - **MeasureRadius** - Shows the value of the feature's "Radius" field around your point.
 >
 > - **ViewShed** - Shows the claculated viewshed of a viewer standing at that point within the calculated radius.
-><img src="ViewshedExample.png" alt="Point draft layer used to show viewshed" height="320px" ></img>
+><img src="ViewshedExample.png" alt="Point draft layer used to show viewshed" height="320px" ></img><br>
 > <sub> **Viewer and target height are defined as layer's variable and can be changed easily, but can't be set separately for each point </sub>
 
 > ### **Lines** layer:
