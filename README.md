@@ -72,6 +72,8 @@ The layer's styling is set with scripts and data links. You can start just by ad
 >   
 > <img src="PieIntersection.png" alt="Polygon" height="360px" ></img>
 
+
+
 ## Ready made settings and scripts
 
 The **startingPoint** file is using project's variables save default scripts and give easy access to them using eval(@ScriptName) on any QgsExpressionEngine.
