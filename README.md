@@ -62,7 +62,7 @@ The layer's styling is set with scripts and data links. You can start just by ad
 >
 > - **Min Max** - Calculated and showed as green (Max) and purple (Min) dots.
 >
-> - <img src="Cross-IntersSection.png" alt="" width="360px"> <img src="InputForm.png" alt="" width="360px"></img>
+> <img src="Cross-IntersSection.png" alt="" width="360px"> <img src="InputForm.png" alt="" width="360px"></img><br>
 <sub> Cross-section & intersection of a zoning layer on Haifa's neighbourhoods on the Carmel mountain</sub>
 
 > ### Polygons layer:
