@@ -37,7 +37,7 @@ Project's layers-tree is built to keep focus on the user's **Working layers**.
 The last group called **Drafts & tools** is made out of [temporary scratch layers](https://docs.qgis.org/3.34/en/docs/user_manual/managing_data_source/create_layers.html#creating-a-new-temporary-scratch-layer) for Points, Lines and Polygons that can be used for quick drafts. Each layer can also be used for spatial investigations of your project with easy to use analyzing tools.
 The layer's styling is set with scripts and data links. You can start just by adding a new feature to that layer to start analyzing it:
 
-> ### Points layer:
+### Points layer:
 >
 > - **Point** - For drafts, just showing your points with no calculations
 >
@@ -47,7 +47,7 @@ The layer's styling is set with scripts and data links. You can start just by ad
 ><img src="ViewshedExample.png" alt="Point draft layer used to show viewshed" height="320px" ></img><br>
 > <sub> **Viewer and target height are defined as layer's variable and can be changed easily, but can't be set separately for each point </sub>
 
-> ### **Lines** layer:
+### **Lines** layer:
 >
 > - **Line** - For drafts, automatic calcuations made for distance and slopes.
 > 
@@ -65,7 +65,7 @@ The layer's styling is set with scripts and data links. You can start just by ad
 > <img src="Cross-IntersSection.png" alt="" width="360px"> <img src="InputForm.png" alt="" width="360px"></img><br>
 <sub> Cross-section & intersection of a zoning layer on Haifa's neighbourhoods on the Carmel mountain</sub>
 
-> ### Polygons layer:
+### Polygons layer:
 >
 > - **Measures** - Using *Klas Karlsson's* 'Polygons with measurments', this show the measures for all polygon's segments.
 > - **Intersects others** - Showing the area of intersection of your polygon with another layer and it's calculated size. To choose the layer you want to intersect insert it's name to the feature's "Layer2Intersect" field as with the line intersection.
