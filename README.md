@@ -52,7 +52,7 @@ The layer's styling is set with scripts and data links. You can start just by ad
 > - **Line** - For drafts, automatic calcuations made for distance and slopes.
 > 
 > - **Cross section** - mapTip of the feature will show a basic cross section which you can export using the Export Svg Action button.
-> -
+> 
 > -  **Cross section & Intersection** - Pointing to another layer name using the "Layer2Intersect" field will show a cross-section with intersection chart using the intersected layer's categories and symbology. Adding "LabelField" can be used for different labels instead of category's one. For instance when categories are sorted by Code it's possible to use Desc field for labeling instead.
 >   "GroupByField" is also optional if your wish is to calculate the sum of other fields to you choice (Not the ones used for categorization)
 > 
@@ -70,7 +70,7 @@ The layer's styling is set with scripts and data links. You can start just by ad
 > - **Measures** - Using *Klas Karlsson's* 'Polygons with measurments', this show the measures for all polygon's segments.
 > - **Intersects others** - Showing the area of intersection of your polygon with another layer and it's calculated size. To choose the layer you want to intersect insert it's name to the feature's "Layer2Intersect" field as with the line intersection.
 >   
- <img src="PieIntersection.png" alt="Polygon" height="360px" ></img>
+> <img src="PieIntersection.png" alt="Polygon" height="360px" ></img>
 
 ## Ready made settings and scripts
 
